@@ -1,24 +1,25 @@
 #!/bin/bash
 
 # Script per creare un file .app eseguibile per un'applicazione menu bar e impacchettarlo in un DMG
+# Questo script configura un'app macOS come applicazione per la barra dei menu (menu bar app)
 # Licenza: MIT
 # Data: 2025
 
-# Impostazioni
-APP_NAME="draft"
-APP_VERSION="1.0"
+# Impostazioni configurabili
+APP_NAME="draft"                  # Nome dell'applicazione
+APP_VERSION="1.0"                 # Versione dell'applicazione
 DMG_NAME="${APP_NAME}_${APP_VERSION}_MenuBar"
 VOLUME_NAME="${APP_NAME} Menu Bar"
-SOURCE_APP="./draft.o1/draft.app"  # Percorso all'app compilata
-DMG_TEMP_DIR="./dmg_tmp"
-DMG_BACKGROUND_IMG=""  # Percorso all'immagine di sfondo (opzionale)
-DMG_WINDOW_POS="400 100"
-DMG_WINDOW_SIZE="800 500"
-DMG_ICON_SIZE="128"
-DMG_ICON_POS_X="416"
-DMG_ICON_POS_Y="192"
-APPLICATIONS_SYMLINK_POS_X="128"
-APPLICATIONS_SYMLINK_POS_Y="192"
+SOURCE_APP="./draft.o1/draft.app" # Percorso all'app compilata (modificare se necessario)
+DMG_TEMP_DIR="./dmg_tmp"          # Directory temporanea per il DMG
+DMG_BACKGROUND_IMG=""             # Percorso all'immagine di sfondo (opzionale)
+DMG_WINDOW_POS="400 100"          # Posizione della finestra del DMG
+DMG_WINDOW_SIZE="800 500"         # Dimensione della finestra del DMG
+DMG_ICON_SIZE="128"               # Dimensione dell'icona
+DMG_ICON_POS_X="416"              # Posizione X dell'icona
+DMG_ICON_POS_Y="192"              # Posizione Y dell'icona
+APPLICATIONS_SYMLINK_POS_X="128"  # Posizione X del link alle Applicazioni
+APPLICATIONS_SYMLINK_POS_Y="192"  # Posizione Y del link alle Applicazioni
 
 # Verifica che l'app esista
 if [ ! -d "$SOURCE_APP" ]; then
