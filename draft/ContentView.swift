@@ -6,21 +6,49 @@
 //
 
 import SwiftUI
+import AppKit
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    @EnvironmentObject var editorData: EditorData
+    
+    // Definiamo queste enumerazioni qui perché saranno utilizzate nel menu contestuale
+    enum ImageSize {
+        case small, medium, large
+        
+        var width: CGFloat {
+            switch self {
+            case .small: return 200
+            case .medium: return 350
+            case .large: return 500
+            }
         }
-        .padding()
+        
+        var title: String {
+            switch self {
+            case .small: return "Piccola"
+            case .medium: return "Media"
+            case .large: return "Grande"
+            }
+        }
     }
-}
+    
+    enum ImageAlignment {
+        case left, center, right
+        
+        var nsAlignment: NSTextAlignment {
+            switch self {
+            case .left: return .left
+            case .center: return .center
+            case .right: return .right
+            }
+        }
+    }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    var body: some View {
+        VStack(spacing: 0) {
+            // Editor senza toolbar
+            EditorView()
+                .environmentObject(editorData)
+        }
     }
 }

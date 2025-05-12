@@ -14,6 +14,10 @@
 		063BC40B2DAFDF6F0083CF67 /* draftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC40A2DAFDF6F0083CF67 /* draftTests.swift */; };
 		063BC4152DAFDF6F0083CF67 /* draftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC4142DAFDF6F0083CF67 /* draftUITests.swift */; };
 		063BC4172DAFDF6F0083CF67 /* draftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC4162DAFDF6F0083CF67 /* draftUITestsLaunchTests.swift */; };
+		063BC4252DAFE2280083CF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC4242DAFE2280083CF67 /* AppDelegate.swift */; };
+		063BC4272DAFE25C0083CF67 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC4262DAFE25C0083CF67 /* StatusBarController.swift */; };
+		063BC4292DAFE2770083CF67 /* EditorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC4282DAFE2770083CF67 /* EditorData.swift */; };
+		063BC42B2DAFE2830083CF67 /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC42A2DAFE2830083CF67 /* EditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 		063BC4102DAFDF6F0083CF67 /* draftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = draftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		063BC4142DAFDF6F0083CF67 /* draftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = draftUITests.swift; sourceTree = "<group>"; };
 		063BC4162DAFDF6F0083CF67 /* draftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = draftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+	063BC4242DAFE2280083CF67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+	063BC4282DAFE2770083CF67 /* EditorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorData.swift; sourceTree = "<group>"; };
+	063BC42A2DAFE2830083CF67 /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				063BC3F82DAFDF6E0083CF67 /* draftApp.swift */,
+				063BC4242DAFE2280083CF67 /* AppDelegate.swift */,
+				063BC4282DAFE2770083CF67 /* EditorData.swift */,
+				063BC42A2DAFE2830083CF67 /* EditorView.swift */,
 				063BC3FA2DAFDF6E0083CF67 /* ContentView.swift */,
 				063BC3FC2DAFDF6F0083CF67 /* Assets.xcassets */,
 				063BC4012DAFDF6F0083CF67 /* draft.entitlements */,
@@ -259,6 +269,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063BC4252DAFE2280083CF67 /* AppDelegate.swift in Sources */,
+				063BC4292DAFE2770083CF67 /* EditorData.swift in Sources */,
+				063BC42B2DAFE2830083CF67 /* EditorView.swift in Sources */,
 				063BC3FB2DAFDF6E0083CF67 /* ContentView.swift in Sources */,
 				063BC3F92DAFDF6E0083CF67 /* draftApp.swift in Sources */,
 			);
@@ -424,6 +437,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = draft/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +466,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = draft/Info.plist;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

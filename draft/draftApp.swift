@@ -2,16 +2,18 @@
 //  draftApp.swift
 //  draft
 //
-//  Created by Rocco Geremia Ciccone on 16/04/25.
+//  Created in 2025
 //
 
 import SwiftUI
 
 @main
 struct draftApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
