@@ -67,13 +67,8 @@ Questo progetto è distribuito sotto licenza MIT. Vedi il file `LICENSE` per ult
 
 ## Screenshot
 
-![Draft Menu Bar App](screenshots/draft_menu_bar.png)
-*Draft accessibile dalla barra dei menu di macOS*
-
-![Draft Editor](screenshots/draft_editor.png)
+![Draft Editor](draft_editor.png)
 *Il foglio di carta virtuale con alcune note e un'immagine*
-
-**Nota**: Le immagini sono solo di esempio. Per vedere l'interfaccia reale, installa e prova l'applicazione.
 
 ## Contribuire
 
