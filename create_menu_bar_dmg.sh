@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Script per creare un file .app eseguibile per un'applicazione menu bar e impacchettarlo in un DMG
-# Questo script configura un'app macOS come applicazione per la barra dei menu (menu bar app)
+# Questo script configura Draft, un'app "foglio di carta virtuale" per la barra dei menu di macOS
+# L'app permette di prendere note, inserire link e immagini per avere sempre tutto a portata di mano
 # Licenza: MIT
 # Data: 2025
 
