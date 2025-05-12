@@ -68,6 +68,7 @@ Questo progetto è distribuito sotto licenza MIT. Vedi il file `LICENSE` per ult
 ## Screenshot
 
 ![Draft Editor](draft_editor.png)
+
 *Il foglio di carta virtuale con alcune note e un'immagine*
 
 ## Contribuire
